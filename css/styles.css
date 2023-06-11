@@ -222,6 +222,11 @@ color: var(--title-color);
    padding-bottom: 120px;
 }
 
+.icon{
+width: 264;
+height: 112;
+}
+
 .about-name{
     margin-bottom: 8px;
     margin-top: 0;
@@ -391,7 +396,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .new-section{
-
+margin: 0;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
@@ -404,8 +409,26 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .customers-ul{
+    padding-top: 72px;
     display: flex;
-    
+}
+
+.customers-list{
+    width: 168px;
+    height: 88px;
+    margin-right: 24px;
+    box-sizing: border-box;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+}
+
+.customers-list:last-child
+{
+  margin-right: 0;  
+}
+
+.logo{
+    padding: 16px 32px;
 }
 
 /* FOOTER */

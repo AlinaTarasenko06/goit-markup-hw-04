@@ -159,6 +159,7 @@ color: var(--ocean-color);
 
 .section-one{
 padding: 188px 0;
+max-width: 1440px;
 
 background:var(--navy-color);
 text-align: center;
@@ -459,6 +460,11 @@ margin: 0;
 
 .logo{
     padding: 16px 32px;
+    
+}
+
+.logo:hover{
+    color: var(--ocean-color);
 }
 
 /* FOOTER */

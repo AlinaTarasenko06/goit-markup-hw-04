@@ -6,7 +6,7 @@
 
 
 :root{
---
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --title-color: #ffffff;
     --cloud-color: #f4f4fd;
     --slate-color: #434455;
@@ -562,6 +562,7 @@ padding-bottom: 100px;
 }
 
 .container-footer{
+    display: flex;
     margin-right: 120px;
 }
 
@@ -664,6 +665,7 @@ border: 1px solid #e7e9fc;
 }
 
 .row-list{
+    overflow: hidden;
     position: relative;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     box-sizing: border-box;
@@ -681,6 +683,7 @@ border: 1px solid #e7e9fc;
 margin-bottom: 0;
 }
 
+
 /* OWERLAY */
 .project-card{
 
@@ -691,7 +694,7 @@ margin-bottom: 0;
     height: 100%;
 
 transform: translateY(100%);
-transition: transform var();
+transition: transform var(--transition);
 
     position: absolute;
     top: 0;
@@ -760,6 +763,7 @@ font-family: 'Roboto';
  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop{
+    transition: opacity 250ms ease-out, visibility 250ms ease-out ;
 position: fixed;
 top: 0;
 left: 0;
@@ -778,7 +782,7 @@ pointer-events: none;
     position: absolute;
     top: 50%;
     left: 50%;
-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     width: 408px;
     min-height: 584px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -788,6 +792,12 @@ transform: translateX(-50%) translateY(-50%);
     border-radius: 4px;
     background: var(--dairy, #FCFCFC);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+transition: opacity 300ms ease-out 250ms, transform 300ms ease-out 250ms ;
+}
+
+.backdrop.is-hidden .modal{
+    transform: translateX(-50%) translateY(-70%);
+    opacity: 0;
 }
 
 .modal-btn{

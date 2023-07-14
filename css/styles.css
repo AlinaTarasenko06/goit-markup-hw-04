@@ -353,7 +353,6 @@ background-color:var(--cloud-color);
 .div-three{
     padding-top: 32px;
     padding-bottom: 32px;
-    padding: 32px 0;
 }
 
 .hero-three{
@@ -381,8 +380,6 @@ background-color:var(--cloud-color);
 .human-div{
 padding-top: 32px;
 padding-bottom: 32px;
-padding-left: 16px;
-padding-right: 16px;
 }
 
 
@@ -574,7 +571,11 @@ padding-bottom: 100px;
 
 .container-footer{
     display: flex;
-    margin-right: 120px;
+    align-items: baseline;
+}
+
+.information{
+    margin-right: 120px
 }
 
 .soc-div{
@@ -583,13 +584,19 @@ padding-bottom: 100px;
 
 .footer-information{
     max-width: 264px;
-
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
         font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--cloud-color);
+        color: var(--title-color);
+}
+
+.human-icom-list{
+    display: flex;
+    gap: 16px;
 }
 
 .footer{

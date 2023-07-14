@@ -129,13 +129,13 @@ font-family: 'Roboto';
 }
 
 .header-link.active::after{
+    color: #404bbf;
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     display: block;
     width: 100%;
-    color: #404BBF;
     bottom: -1px;
         height: 4px;
         border-radius: 2px;
@@ -683,6 +683,9 @@ border: 1px solid #e7e9fc;
 margin-bottom: 0;
 }
 
+.project-link{
+    display: block;
+}
 
 /* OWERLAY */
 .project-card{

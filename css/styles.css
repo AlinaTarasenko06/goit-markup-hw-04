@@ -107,7 +107,7 @@ margin-right: 40px;
 }
 
 .header-link{
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
     display: block;
     padding-top: 24px;
@@ -120,6 +120,10 @@ font-family: 'Roboto';
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--navy-color);
+}
+.active{
+        color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .header-link:hover{
     color:var(--ocean-color);
@@ -145,6 +149,7 @@ font-family: 'Roboto';
 .header-address{
     display: flex;
     margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .address-list:first-child{

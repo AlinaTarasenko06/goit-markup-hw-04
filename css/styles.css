@@ -730,7 +730,7 @@ margin-bottom: 0;
 }
 
 .project-link:focus .bottom-row{
-transform: translateY(0%)
+    transform: translateY(0%);
 }
 
 
